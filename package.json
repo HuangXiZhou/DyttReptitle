@@ -1,61 +1,61 @@
 {
-  "name": "dytt-reptitle",
-  "version": "1.0.9",
-  "description": "电影天堂爬虫",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint . --fix",
-    "test": "jest . --cache --silent",
-    "cov": "jest . --cache --coverage --silent",
-    "ci": "npm run lint && npm run cov",
-    "codecov": "cat ./coverage/lcov.info | codecov"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
+    "name": "dytt-reptitle-v2",
+    "version": "1.0.5",
+    "description": "电影天堂爬虫(v2版本)",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint . --fix",
+        "test": "jest . --cache --silent",
+        "cov": "jest . --cache --coverage --silent",
+        "ci": "npm run lint && npm run cov",
+        "codecov": "cat ./coverage/lcov.info | codecov"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint && npm run test"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/luchenwei9266/dytt-reptitle.git"
+    },
+    "keywords": [
+        "Node.js",
+        "Reptitle"
+    ],
+    "author": "lugege9266@gmail.com",
+    "license": "MIT",
+    "bin": {
+        "reptitle": "./index.js"
+    },
+    "bugs": {
+        "url": "https://github.com/luchenwei9266/dytt-reptitle/issues"
+    },
+    "homepage": "https://github.com/luchenwei9266/dytt-reptitle#readme",
+    "dependencies": {
+        "bluebird": "^3.5.3",
+        "cheerio": "^1.0.0-rc.2",
+        "iconv-lite": "^0.4.24",
+        "p-limit": "^2.0.0",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2"
+    },
+    "devDependencies": {
+        "codecov.io": "^0.1.6",
+        "cz-conventional-changelog": "^2.1.0",
+        "eslint": "^5.10.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jest": "^22.1.2",
+        "eslint-plugin-node": "^8.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "husky": "^1.2.0",
+        "jest": "^23.6.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HuangXiZhou/DyttReptitle.git"
-  },
-  "keywords": [
-    "Node.js",
-    "Reptitle"
-  ],
-  "author": "xizhouh@gmail.com",
-  "license": "MIT",
-  "bin": {
-    "reptitle": "./index.js"
-  },
-  "bugs": {
-    "url": "https://github.com/HuangXiZhou/DyttReptitle/issues"
-  },
-  "homepage": "https://github.com/HuangXiZhou/DyttReptitle#readme",
-  "dependencies": {
-    "bluebird": "^3.5.3",
-    "cheerio": "^1.0.0-rc.2",
-    "iconv-lite": "^0.4.24",
-    "p-limit": "^2.0.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2"
-  },
-  "devDependencies": {
-    "codecov.io": "^0.1.6",
-    "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.10.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "husky": "^1.2.0",
-    "jest": "^23.6.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
 }
